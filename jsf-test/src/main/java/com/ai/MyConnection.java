@@ -9,7 +9,7 @@ public class MyConnection {
 	public static Connection getConnection() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test_jsf","root","hein");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test_jsf","root","root");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Driver Class not found");
 		} catch (SQLException e){
